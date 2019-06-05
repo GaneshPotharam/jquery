@@ -1,0 +1,47 @@
+
+ <html>
+      <head>
+         <title>jQuery Task</title>
+         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+         </script>
+         
+         <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+         </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+     <script type = "text/javascript" language = "javascript">
+   
+    $(document).ready(function() {
+
+      $("#explode").click(function(){
+         $(".image").hide("explode", {pieces: 100 }); 
+      });
+
+      $("#reverse").click(function(){
+          $(".image").show("explode", {pieces: 100}); 
+      });  
+   });
+   
+</script>
+
+<style>
+  button{
+     margin-top :20px;
+  }
+   div{
+      margin :100px;
+   }  
+</style>
+</head>
+
+<body class="container">
+<button class="btn btn-primary" id = "explode"> explode </button>
+<button class="btn btn-primary" id = "reverse"> reverse</button> 
+
+<div class="image">
+   <img src="C:\Users\pvenugopal\Desktop\Ganesh\waterfall-thac-dray-nur-buon-me-thuot-daklak-68147.jpeg">
+</div>
+</body>  
+</html>   
+
+ 
