@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Image Puzzle</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/image-puzzle.css" rel="stylesheet" />
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/image-puzzle.js"></script>
+</head>
+<body>
+        
+     <div id="collage"> 
+                <div id="actualImageBox">
+                    <img id="actualImage" />
+                </div>
+                <ul id="sortable" class="sortable"></ul>            
+        <script>
+             //var images = 'images/london-bridge.jpg';
+             //[
+             //    { src: 'images/london-bridge.jpg', title: 'London Bridge' },
+             //];
+
+            $(function () {
+               // var gridSize ;
+                imagePuzzle.startGame();
+            });
+        </script>
+      </div>
+</body>
+</html>
